@@ -452,6 +452,9 @@ select {
 }
 
 
+
+
+
 /* ----------------------------------------------------------------
    BUTTONS
 ---------------------------------------------------------------- */
@@ -1168,9 +1171,10 @@ select {
 /* ── Mobile hamburger button fix ─────────────────────────────────────────────── */
 
 @media (max-width: 900px) {
-  .nav-container {
-    padding-inline: 0px;
-  }
+.nav-container {
+  padding-inline: 16px;
+}
+
 
   .nav-logo-img {
     height: 40px;
@@ -1215,4 +1219,42 @@ select {
   margin-bottom: var(--space-md);
   filter: brightness(0) invert(1);
   opacity: 0.85;
+}
+
+
+/* ── Final Mobile Nav hamburger button Safety Fix ─────────────────────────────── */
+/* ── Final Mobile Nav Safety Fix ─────────────────────────────── */
+@media (max-width: 900px) {
+  .nav-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 20px;
+    gap: 12px;
+    overflow: hidden;
+  }
+
+  .nav-logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: calc(100% - 60px);
+    overflow: hidden;
+    padding-top: 4px;
+  }
+
+ .nav-logo-img {
+  height: clamp(92px, 22vw, 124px);
+    width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+  .nav-hamburger {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: 0;
+  }
 }

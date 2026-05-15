@@ -182,6 +182,33 @@
 }
 
 
+/* ── Stats Knowledge Base Label ─────────────────────────────── */
+.stats-label-row {
+  text-align: center;
+  padding-bottom: var(--space-xl);
+}
+
+.stats-knowledge-base {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-ink-60);
+  letter-spacing: 0.02em;
+}
+
+/* ── HVACR Footnote ─────────────────────────────────────────── */
+.hvacr-footnote {
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--color-rule);
+}
+
+.hvacr-footnote p {
+  font-size: 12px;
+  color: var(--color-ink-30);
+  letter-spacing: 0.04em;
+}
+
 /* ----------------------------------------------------------------
    MISSION SECTION
 ---------------------------------------------------------------- */
