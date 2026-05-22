@@ -636,3 +636,22 @@ window.addEventListener('pageshow', (e) => {
   updateProgress(1);
 
 })();
+
+
+
+/* ----------------------------------------------------------------
+   HERO GRID — Force animation restart on return visits
+   Fixes: grid animation not playing when preloader is skipped
+---------------------------------------------------------------- */
+(function initHeroGrid() {
+  const grid = document.querySelector('.hero-grid-lines');
+  if (!grid) return;
+
+  /* Force browser to restart the animation */
+  grid.style.animationName = 'none';
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      grid.style.animationName = '';
+    });
+  });
+})();

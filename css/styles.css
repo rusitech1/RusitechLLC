@@ -45,6 +45,7 @@
   -webkit-mask-image: radial-gradient(ellipse 90% 80% at 60% 40%,
     black 0%, transparent 100%);
   animation: grid-scroll 4.5s linear infinite;
+  animation-play-state: running;
   will-change: background-position;
 }
 
